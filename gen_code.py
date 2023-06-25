@@ -6,7 +6,7 @@ from damm32 import Damm32
 d32 = Damm32()
 
 org = "SRO"
-prefix = "AA" # Dan Trickey
+prefix = "SB"
 
 def gen_code(code='AA') -> str:
 
@@ -17,10 +17,10 @@ def gen_code(code='AA') -> str:
     return code
 
 def print_code():
-    code = gen_code()
+    code = gen_code(prefix)
 
     print(f"{org}-{code[:3]}-{code[3:]}")
 
 if __name__ == "__main__":
-    for _ in range(0,100):
+    for _ in range(22):
         print_code()
